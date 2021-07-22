@@ -14,8 +14,8 @@ import com.lagm.springboot.app.item.models.service.ItemService;
 @RestController
 public class ItemController {
 	@Autowired
-	// @Qualifier("serviceFeign")
-	@Qualifier("serviceRestTemplate") // Si queremos usar el servicio que usa RestTemplate
+	@Qualifier("serviceFeign")
+	// @Qualifier("serviceRestTemplate") // Si queremos usar el servicio que usa RestTemplate
 	private ItemService itemService;
 	
 	@GetMapping("/listar")
