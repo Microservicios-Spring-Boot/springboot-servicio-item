@@ -2,8 +2,8 @@ package com.lagm.springboot.app.item.models.service;
 
 import java.util.List;
 
+import com.lagm.springboot.app.commons.models.entity.Producto;
 import com.lagm.springboot.app.item.models.Item;
-import com.lagm.springboot.app.item.models.Producto;
 
 public interface ItemService {
 	public List<Item> findAll();

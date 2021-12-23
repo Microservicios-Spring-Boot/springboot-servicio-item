@@ -1,5 +1,7 @@
 package com.lagm.springboot.app.item.models;
 
+import com.lagm.springboot.app.commons.models.entity.Producto;
+
 public class Item {
 	private Producto producto;
 	private Integer cantidad;

@@ -6,9 +6,9 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.lagm.springboot.app.commons.models.entity.Producto;
 import com.lagm.springboot.app.item.clientes.ProductoClienteRest;
 import com.lagm.springboot.app.item.models.Item;
-import com.lagm.springboot.app.item.models.Producto;
 
 @Service("serviceFeign")
 // @Primary // Indica la implementación por defecto a inyectar cuando no se especifica el nombre del componente
