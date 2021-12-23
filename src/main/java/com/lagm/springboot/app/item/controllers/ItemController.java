@@ -36,8 +36,8 @@ public class ItemController {
 	private Environment env;
 	
 	@Autowired
-	// @Qualifier("serviceFeign") // Si queremos usar el servicio que usa Feign Client
-	@Qualifier("serviceRestTemplate") // Si queremos usar el servicio que usa RestTemplate
+	@Qualifier("serviceFeign") // Si queremos usar el servicio que usa Feign Client
+	// @Qualifier("serviceRestTemplate") // Si queremos usar el servicio que usa RestTemplate
 	private ItemService itemService;
 	
 	@Value("${configuracion.texto}")
