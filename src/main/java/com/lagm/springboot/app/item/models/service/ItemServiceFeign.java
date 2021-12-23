@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.lagm.springboot.app.item.clientes.ProductoClienteRest;
 import com.lagm.springboot.app.item.models.Item;
+import com.lagm.springboot.app.item.models.Producto;
 
 @Service("serviceFeign")
 // @Primary // Indica la implementación por defecto a inyectar cuando no se especifica el nombre del componente
@@ -24,6 +25,24 @@ public class ItemServiceFeign implements ItemService {
 	@Override
 	public Item findById(Long id, Integer cantidad) {
 		return new Item(this.clienteFeign.detalle(id), cantidad);
+	}
+
+	@Override
+	public Producto save(Producto producto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Producto update(Producto producto, Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Long id) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
